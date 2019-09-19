@@ -210,7 +210,7 @@ Please generate tags using 'ember generate tag your-tag-name'`);
     let appPrefix = join(this.project.configPath(), '../..');
 
     const content = walkSync(join(appPrefix, 'content'), {
-      globs: ['*.md'],
+      globs: ['**/*.md'],
     });
 
     const contentYamls = _.chain(content)
